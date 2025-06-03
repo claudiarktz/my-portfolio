@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio | Développeuse Web</title>
+    <base target="_self">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MonPortfolio</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="theme-toggle">🌓</button>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animate">Bonjour, je suis <span>Développeuse Web</span></h1>
+            <p class="animate delay-1">Je crée des applications web modernes et performantes avec une attention particulière pour l'expérience utilisateur.</p>
+            <div class="animate delay-2">
+                <a href="#projects" class="btn">Voir mes projets</a>
+                <a href="#contact" class="btn btn-outline">Me contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Mes <span>projets</span></h2>
+        <div class="projects-grid">
+            <div class="project-card animate">
+                <div class="project-img" style="background-color: #6366f1;"></div>
+                <div class="project-content">
+                    <h3 class="project-title">Application E-commerce</h3>
+                    <p class="project-description">Plateforme de vente en ligne avec panier et paiement sécurisé.</p>
+                    <a href="#" class="btn btn-outline">Voir plus</a>
+                </div>
+            </div>
+            <div class="project-card animate delay-1">
+                <div class="project-img" style="background-color: #4f46e5;"></div>
+                <div class="project-content">
+                    <h3 class="project-title">Réseau Social</h3>
+                    <p class="project-description">Application de partage de moments avec système de messagerie.</p>
+                    <a href="#" class="btn btn-outline">Voir plus</a>
+                </div>
+            </div>
+            <div class="project-card animate delay-2">
+                <div class="project-img" style="background-color: #7c3aed;"></div>
+                <div class="project-content">
+                    <h3 class="project-title">Dashboard Admin</h3>
+                    <p class="project-description">Interface d'administration avec visualisation de données en temps réel.</p>
+                    <a href="#" class="btn btn-outline">Voir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Mes <span>compétences</span></h2>
+        <div class="skills-container">
+            <div class="skill-card animate">
+                <div class="skill-icon">💻</div>
+                <h3>HTML/CSS</h3>
+                <p>Maîtrise des standards web modernes</p>
+            </div>
+            <div class="skill-card animate delay-1">
+                <div class="skill-icon">⚛️</div>
+                <h3>JavaScript</h3>
+                <p>Développement frontend avancé</p>
+            </div>
+            <div class="skill-card animate delay-2">
+                <div class="skill-icon">🔌</div>
+                <h3>API REST</h3>
+                <p>Intégration et création d'API</p>
+            </div>
+            <div class="skill-card animate delay-1">
+                <div class="skill-icon">📱</div>
+                <h3>Responsive</h3>
+                <p>Design adapté à tous les appareils</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Me <span>contacter</span></h2>
+        <form class="contact-form animate">
+            <div class="form-group">
+                <label for="name">Nom</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2023 Mon Portfolio. Tous droits réservés.</p>
+        <div class="social-links">
+            <a href="#" class="social-link">📱</a>
+            <a href="#" class="social-link">💼</a>
+            <a href="#" class="social-link">🐱</a>
+            <a href="#" class="social-link">📧</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

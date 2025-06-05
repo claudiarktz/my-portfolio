@@ -1,4 +1,32 @@
-// Navigation smooth scroll
+// Gestion du thème sombre/clair
+const themeToggle = document.querySelector('.theme-toggle');
+const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+function setTheme(isDark) {
+    if (isDark) {
+        document.body.classList.add('dark');
+        themeToggle.textContent = '☀️';
+    } else {
+        document.body.classList.remove('dark');
+        themeToggle.textContent = '🌓';
+    }
+}
+
+// Vérifier la préférence système au chargement
+setTheme(prefersDarkScheme.matches);
+
+// Écouter les changements de préférence système
+prefersDarkScheme.addEventListener('change', e => {
+    setTheme(e.matches);
+});
+
+// Basculer manuellement
+themeToggle.addEventListener('click', () => {
+    const isDark = document.body.classList.contains('dark');
+    setTheme(!isDark);
+});
+
+// Navigation fluide
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -14,54 +42,51 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Dark/light mode toggle
-const themeToggle = document.querySelector('.theme-toggle');
-const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+// Gestion du formulaire
+const contactForm = document.getElementById('contactForm');
 
-// Check system preference
-if (prefersDarkScheme.matches) {
-    document.body.classList.add('dark');
-    themeToggle.textContent = '🌞';
-} else {
-    document.body.classList.remove('dark');
-    themeToggle.textContent = '🌙';
-}
-
-// Toggle button
-themeToggle.addEventListener('click', () => {
-    if (document.body.classList.contains('dark')) {
-        document.body.classList.remove('dark');
-        themeToggle.textContent = '🌙';
-    } else {
-        document.body.classList.add('dark');
-        themeToggle.textContent = '🌞';
+contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Vérification du reCAPTCHA
+    const recaptcha = document.getElementById('recaptcha');
+    if (!recaptcha.checked) {
+        alert('Veuillez vérifier que vous n\'êtes pas un robot.');
+        return;
     }
+    
+    // Récupération des données du formulaire
+    const formData = new FormData(this);
+    const data = {};
+    formData.forEach((value, key) => {
+        data[key] = value;
+    });
+    
+    // Simulation d'envoi (remplacer par un vrai envoi AJAX)
+    console.log('Données du formulaire:', data);
+    alert('Message envoyé avec succès! (simulation)');
+    
+    // Réinitialisation du formulaire
+    this.reset();
 });
 
-// Form submission
-const contactForm = document.querySelector('.contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('Merci pour votre message! Je vous répondrai bientôt.');
-        contactForm.reset();
-    });
-}
-
-// Animation on scroll
+// Animation au défilement
 const animateElements = document.querySelectorAll('.animate');
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = 1;
-            entry.target.style.transform = 'translateY(0)';
+function checkScroll() {
+    animateElements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        
+        if (elementTop < windowHeight - 100) {
+            element.style.opacity = '1';
+            element.style.transform = 'translateY(0)';
         }
     });
-}, { threshold: 0.1 });
+}
 
-animateElements.forEach(el => {
-    el.style.opacity = 0;
-    el.style.transform = 'translateY(20px)';
-    observer.observe(el);
-});
+// Vérifier au chargement
+window.addEventListener('load', checkScroll);
+
+// Vérifier au défilement
+window.addEventListener('scroll', checkScroll);

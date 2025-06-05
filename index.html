@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio | Développeuse Web</title>
+    <title>Portfolio | Développeuse Web Full-Stack</title>
     <base target="_self">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -23,8 +23,8 @@
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 class="animate">Bonjour, je suis <span>Développeuse Web</span></h1>
-            <p class="animate delay-1">Je crée des applications web modernes et performantes avec une attention particulière pour l'expérience utilisateur.</p>
+            <h1 class="animate">Bonjour, je suis <span>Développeuse Web Full-Stack</span></h1>
+            <p class="animate delay-1">Je crée des applications web modernes et performantes avec React, Node.js et diverses technologies back-end.</p>
             <div class="animate delay-2">
                 <a href="#projects" class="btn">Voir mes projets</a>
                 <a href="#contact" class="btn btn-outline">Me contacter</a>
@@ -35,28 +35,54 @@
     <section id="projects">
         <h2 class="section-title">Mes <span>projets</span></h2>
         <div class="projects-grid">
+            <!-- Projet le plus récent en premier -->
             <div class="project-card animate">
-                <div class="project-img" style="background-color: #6366f1;"></div>
+                <div class="project-img" style="background-color: #7c3aed;"></div>
                 <div class="project-content">
-                    <h3 class="project-title">Application E-commerce</h3>
-                    <p class="project-description">Plateforme de vente en ligne avec panier et paiement sécurisé.</p>
-                    <a href="#" class="btn btn-outline">Voir plus</a>
+                    <div class="project-date">Avril 2025</div>
+                    <div class="project-category">Formation</div>
+                    <h3 class="project-title">Advanced Object-Oriented Design in Pharo</h3>
+                    <p class="project-description">Formation en conception orientée objet avancée avec Pharo Smalltalk et obtention d'une attestation de participation délivrée par le Directeur de Recherche INRIA-Lille Nord Europe.</p>
                 </div>
             </div>
+
             <div class="project-card animate delay-1">
                 <div class="project-img" style="background-color: #4f46e5;"></div>
                 <div class="project-content">
-                    <h3 class="project-title">Réseau Social</h3>
-                    <p class="project-description">Application de partage de moments avec système de messagerie.</p>
-                    <a href="#" class="btn btn-outline">Voir plus</a>
+                    <div class="project-date">Mars 2025</div>
+                    <div class="project-category">Projet pédagogique</div>
+                    <h3 class="project-title">Gestion des virements bancaires</h3>
+                    <p class="project-description">Monitoring de base de données, interface utilisateur et API pour un système de virements bancaires. Développé avec NodeJS-ExpressJS et ReactJS-React-Hooks.</p>
                 </div>
             </div>
+
             <div class="project-card animate delay-2">
-                <div class="project-img" style="background-color: #7c3aed;"></div>
+                <div class="project-img" style="background-color: #6366f1;"></div>
                 <div class="project-content">
-                    <h3 class="project-title">Dashboard Admin</h3>
-                    <p class="project-description">Interface d'administration avec visualisation de données en temps réel.</p>
-                    <a href="#" class="btn btn-outline">Voir plus</a>
+                    <div class="project-date">Mai-Juin 2024</div>
+                    <div class="project-category">Projet pédagogique</div>
+                    <h3 class="project-title">Gestion des réservations d'hôtel</h3>
+                    <p class="project-description">Application web complète pour gérer les réservations de chambres d'hôtel avec développement de l'API et de l'interface utilisateur en PHP et ReactJS.</p>
+                </div>
+            </div>
+
+            <div class="project-card animate delay-1">
+                <div class="project-img" style="background-color: #8b5cf6;"></div>
+                <div class="project-content">
+                    <div class="project-date">Mars-Juin 2024</div>
+                    <div class="project-category">Projet pédagogique</div>
+                    <h3 class="project-title">Simulation de problème d'affectation</h3>
+                    <p class="project-description">Application de simulation d'un problème d'affectation en recherche opérationnelle développée en ReactJS.</p>
+                </div>
+            </div>
+
+            <div class="project-card animate delay-2">
+                <div class="project-img" style="background-color: #6d28d9;"></div>
+                <div class="project-content">
+                    <div class="project-date">Septembre-Novembre 2023</div>
+                    <div class="project-category">Stage pédagogique</div>
+                    <h3 class="project-title">Module valeurs administratives des véhicules</h3>
+                    <p class="project-description">Développement d'un module pour la Direction Générale des Impôts Fianarantsoa utilisant ReactJS, NodeJS-ExpressJS et MySQL.</p>
                 </div>
             </div>
         </div>
@@ -65,58 +91,202 @@
     <section id="skills">
         <h2 class="section-title">Mes <span>compétences</span></h2>
         <div class="skills-container">
-            <div class="skill-card animate">
-                <div class="skill-icon">💻</div>
-                <h3>HTML/CSS</h3>
-                <p>Maîtrise des standards web modernes</p>
+            <!-- Frontend -->
+            <div class="skills-category animate">
+                <h3 class="skills-category-title">Frontend</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="react" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path fill="#61DAFB" d="M418.2 177.2c-5.4-1.8-10.8-3.5-16.2-5.1.9-3.7 1.7-7.4 2.5-11.1 12.3-59.6 4.2-107.5-23.1-123.3-26.3-15.1-69.2.4-112.3 38.2-4.8 4.2-9.4 8.6-13.9 13.1-4.5-4.5-9-8.9-13.9-13.1-43.1-37.8-86-53.3-112.3-38.2-27.3 15.8-35.4 63.7-23.1 123.3.8 3.7 1.6 7.4 2.5 11.1-5.4 1.6-10.8 3.4-16.2 5.1C59 213.2 16 245.5 16 289.5c0 34.3 26.5 63.3 71.5 70.9 5.4 1.8 10.8 3.5 16.2 5.1-.9 3.7-1.7 7.4-2.5 11.1-12.3 59.6-4.2 107.5 23.1 123.3 26.2 15.1 69.2-.4 112.3-38.2 4.8-4.2 9.4-8.6 13.9-13.1 4.5 4.5 9 8.9 13.9 13.1 43.1 37.8 86 53.3 112.3 38.2 27.3-15.8 35.4-63.7 23.1-123.3-.8-3.7-1.6-7.4-2.5-11.1 5.4-1.6 10.8-3.4 16.2-5.1 45-7.6 71.5-36.6 71.5-70.9 0-44-43-76.3-93.8-112.3zM256 354.5c-54.3 0-98.5-44.2-98.5-98.5s44.2-98.5 98.5-98.5 98.5 44.2 98.5 98.5-44.2 98.5-98.5 98.5z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="skill-name">ReactJS</h4>
+                        <p>Développement d'interfaces</p>
+                    </div>
+                    <div class="skill-card">
+    		    	<div class="skill-icon">
+        		    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="js" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        		        <path fill="#F7DF1E" d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"></path>
+        		    </svg>
+    		        </div>
+           		<h4 class="skill-name">JavaScript</h4>
+     			<p>ES6+, Programmation fonctionnelle</p>
+		    </div>
+
+		   <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="js" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path fill="#F7DF1E" d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="skill-name">JavaScript</h4>
+                        <p>ES6+, Programmation fonctionnelle</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="html5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path fill="#E34F26" d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="skill-name">HTML5</h4>
+                        <p>Structure sémantique</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="css3" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path fill="#1572B6" d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="skill-name">CSS3</h4>
+                        <p>Styles et animations</p>
+                    </div>
+                </div>
             </div>
-            <div class="skill-card animate delay-1">
-                <div class="skill-icon">⚛️</div>
-                <h3>JavaScript</h3>
-                <p>Développement frontend avancé</p>
+
+            <!-- Backend -->
+            <div class="skills-category animate delay-1">
+                <h3 class="skills-category-title">Backend</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="node-js" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path fill="#339933" d="M224 508c-6.7 0-13.5-.7-20-2-39.9-8.8-68-43.4-68-84.5V288h40v133.5c0 18.7 11.7 34.6 28 40.3 25.9 9.1 54.8-5.7 63.4-30.6 1.5-4.6 2.6-9.3 2.6-14.2V288h40v133.5c0 41.1-28.1 75.7-68 84.5-6.5 1.3-13.3 2-20 2zM387.5 268.5c-11.9-6.1-26.9-2.2-35.7 8.8-24.2 30.4-58.3 48.6-95.7 48.8-37.5-.2-71.6-18.4-95.8-48.8-8.8-11-23.8-14.9-35.7-8.8s-17.5 20.3-12.6 33.2c30.4 75.6 102.1 126.2 183.1 126.2 80.9 0 152.6-50.6 183.1-126.2 4.9-12.9-.7-27.1-12.7-33.2zM155.7 170.9c3.3 18 16.3 32.1 33.5 32.1s30.2-14.1 33.5-32.1l14.9-85.1H140.8l14.9 85.1zM352 170.9c3.3 18 16.3 32.1 33.5 32.1s30.2-14.1 33.5-32.1l14.9-85.1H337.1l14.9 85.1z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="skill-name">Node.js</h4>
+                        <p>Environnement serveur</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="php" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path fill="#777BB4" d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM240 320h-32c-8.8 0-16-7.2-16-16v-80c0-8.8 7.2-16 16-16h32c35.3 0 64 28.7 64 64s-28.7 64-64 64zm96-64c0 35.3-28.7 64-64 64h-32V208h32c35.3 0 64 28.7 64 64zM112 208v96c0 8.8-7.2 16-16 16H64v-96c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="skill-name">PHP</h4>
+                        <p>Développement back-end</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="code" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                <path fill="#FF6B6B" d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117.6 256l90.1-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523.5 256l-90.1 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="skill-name">Pharo Smalltalk</h4>
+                        <p>Programmation orientée objet</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="server" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path fill="#4ECDC4" d="M480 160H32c-17.673 0-32-14.327-32-32V64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm112 248H32c-17.673 0-32-14.327-32-32v-64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm112 248H32c-17.673 0-32-14.327-32-32v-64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="skill-name">API REST</h4>
+                        <p>Conception d'API</p>
+                    </div>
+                </div>
             </div>
-            <div class="skill-card animate delay-2">
-                <div class="skill-icon">🔌</div>
-                <h3>API REST</h3>
-                <p>Intégration et création d'API</p>
+
+            <!-- Bases de données -->
+            <div class="skills-category animate delay-1">
+                <h3 class="skills-category-title">Bases de données</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="database" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path fill="#FFA500" d="M448 73.143v45.714C448 159.143 347.667 192 224 192S0 159.143 0 118.857V73.143C0 32.857 100.333 0 224 0s224 32.857 224 73.143zM448 176v102.857C448 319.143 347.667 352 224 352S0 319.143 0 278.857V176c48.125 33.143 136.208 48.572 224 48.572S399.874 209.143 448 176zm0 160v102.857C448 479.143 347.667 512 224 512S0 479.143 0 438.857V336c48.125 33.143 136.208 48.572 224 48.572S399.874 369.143 448 336z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="skill-name">MySQL</h4>
+                        <p>Base relationnelle</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="database" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path fill="#336791" d="M448 73.143v45.714C448 159.143 347.667 192 224 192S0 159.143 0 118.857V73.143C0 32.857 100.333 0 224 0s224 32.857 224 73.143zM448 176v102.857C448 319.143 347.667 352 224 352S0 319.143 0 278.857V176c48.125 33.143 136.208 48.572 224 48.572S399.874 209.143 448 176zm0 160v102.857C448 479.143 347.667 512 224 512S0 479.143 0 438.857V336c48.125 33.143 136.208 48.572 224 48.572S399.874 369.143 448 336z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="skill-name">PostgreSQL</h4>
+                        <p>Base relationnelle avancée</p>
+                    </div>
+                </div>
             </div>
-            <div class="skill-card animate delay-1">
-                <div class="skill-icon">📱</div>
-                <h3>Responsive</h3>
-                <p>Design adapté à tous les appareils</p>
+
+            <!-- Outils -->
+            <div class="skills-category animate delay-2">
+                <h3 class="skills-category-title">Outils</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="git-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path fill="#F05032" d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="skill-name">Git</h4>
+                        <p>Gestion de versions</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="paper-plane" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path fill="#FF6B6B" d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="skill-name">Postman</h4>
+                        <p>Test d'API</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="contact">
         <h2 class="section-title">Me <span>contacter</span></h2>
-        <form class="contact-form animate">
+        <form id="contactForm" class="contact-form animate">
             <div class="form-group">
                 <label for="name">Nom</label>
-                <input type="text" id="name" required>
+                <input type="text" id="name" name="name" required>
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" required>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Sujet</label>
+                <input type="text" id="subject" name="subject" required>
             </div>
             <div class="form-group">
                 <label for="message">Message</label>
-                <textarea id="message" required></textarea>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="recaptcha-container">
+                <input type="checkbox" id="recaptcha" class="recaptcha-checkbox" required>
+                <label for="recaptcha">Je ne suis pas un robot</label>
             </div>
             <button type="submit" class="btn">Envoyer</button>
         </form>
     </section>
 
     <footer>
-        <p>© 2023 Mon Portfolio. Tous droits réservés.</p>
+        <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
         <div class="social-links">
-            <a href="#" class="social-link">📱</a>
-            <a href="#" class="social-link">💼</a>
-            <a href="#" class="social-link">🐱</a>
-            <a href="#" class="social-link">📧</a>
+            <a href="#" class="social-link">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                    <path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+                </svg>
+            </a>
+            <a href="#" class="social-link">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+                </svg>
+            </a>
+            <a href="#" class="social-link">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                </svg>
+            </a>
         </div>
     </footer>
-
     <script src="./js/script.js"></script>
+        
 </body>
 </html>
